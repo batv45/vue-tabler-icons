@@ -1,6 +1,6 @@
 {
   "name": "@batv45/vue-tabler-icons",
-  "version": "1.0.1",
+  "version": "1.0.2-beta1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,12 +15,8 @@
     "demo": "vue serve demo/App.vue"
   },
   "author": "Batuhan OK <activ45@hotmail.com>",
-  "main": "dist/vue-tabler-icons.js",
-  "module": "dist/vue-tabler-icons.es.js",
-  "cdn": "dist/vue-tabler-icons.umd.js",
-  "unpkg": "dist/vue-tabler-icons.umd.js",
-  "jsdelivr": "dist/vue-tabler-icons.umd.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "dist",
     "icons"
