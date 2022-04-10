@@ -1,0 +1,48 @@
+{
+    "name": "vue-tabler-icons",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/batv45/vue-tabler-icons"
+    },
+    "scripts": {
+        "clean": "rm -rf ./icons ./dist",
+        "compile": "node build.js",
+        "build": "npm run clean && npm run compile",
+        "dist": "bili --format umd,umd-min,es,cjs --module-name VueTablerIcons --input.vue-tabler-icons index.js && cp index.d.ts dist/",
+        "release": "npm run build && npm run dist && npm publish",
+        "demo": "vue serve demo/App.vue"
+    },
+    "author": {
+        "email": "activ45@hotmail.com",
+        "name": "Batuhan OK"
+    },
+    "main": "dist/vue-tabler-icons.js",
+    "module": "dist/vue-tabler-icons.es.js",
+    "cdn": "dist/vue-tabler-icons.umd.js",
+    "unpkg": "dist/vue-tabler-icons.umd.js",
+    "jsdelivr": "dist/vue-tabler-icons.umd.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "icons"
+    ],
+    "sideEffects": false,
+    "devDependencies": {
+        "@babel/cli": "^7.10.5",
+        "@babel/core": "^7.11.4",
+        "@tabler/icons": "^1.63.0",
+        "@vue/babel-preset-jsx": "^1.2.4",
+        "bili": "^5.0.5",
+        "fs-extra": "^9.0.1",
+        "pascal-case": "^3.1.1",
+        "vue": "2.6.14",
+        "vue-template-compiler": "2.6.14"
+    },
+    "babel": {
+        "presets": [
+            "@vue/babel-preset-jsx"
+        ]
+    }
+}
